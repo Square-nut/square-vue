@@ -1,0 +1,217 @@
+.popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 99;
+	transform: translate(-50%, -50%);
+	background: #ffffff;
+	color: #6f8092;
+	overflow: hidden;
+}
+
+.popup-inp-error {
+	border: 1px solid #ee3b3c;
+}
+
+.popup input[type='text'] {
+	border: 1px solid #CDCDCD;
+}
+
+.popup .popup-search-label{
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.popup .popup-search-inp{
+	width: 25%;
+	height: 30px;
+	border: 1px solid #cdcdcd;
+}
+.popup .popup-search-sel{
+	height: 32px;
+}
+
+.popup .popup-body-label{
+    width: 25%;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.popup .popup-search-submit {
+	width: 64px;
+	height: 30px;
+	margin-left: 30px;
+	border-radius: 2px;
+	background: #ee3b3c;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.popup .popup-search-submit:hover {
+	background: #d52f30;
+	color: #ffffff;
+}
+.popup .popup-search-reset{
+	height: 30px;
+	margin-left: 30px;
+	border-radius: 2px;
+	padding: 0 5px;
+	cursor: pointer;
+}
+/*title*/
+
+.popup .popup-title {
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #e5e5e5;
+	background: #666666;
+	color: #ffffff;
+}
+
+.popup .popup-title span {
+	line-height: 40px;
+	margin-left: 15px;
+	font-size: 16px;
+}
+
+.popup .popup-title .close-popup {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1002;
+	width: 20px;
+	height: 20px;
+	background: url(../../image/popupClose.png) center left no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+
+/*body*/
+
+.popup .popup-body {
+	/*width: 640px;*/
+	/*height: 300px;*/
+	position: relative;
+	margin: 10px 0;
+}
+.popup .popup-body-child {
+	width:750px;
+	/*max-height: 400px;*/
+	/*margin: 0 15px;*/
+	/*overflow: auto;*/
+}
+
+.popup .popup-body-inpWrap{
+    position: relative;
+    width: 73%;
+    margin-left: 2%;
+    text-align: left;
+}
+/*footer*/
+
+.popup-footer {
+	width: 100%;
+	height: 60px;
+	background: #fafafa;
+	text-align: right;
+	/*direction: rtl;*/
+	border-top: 1px solid #e5e5e5;
+}
+
+
+.popup-footer-btn {
+	height: 28px;
+	margin: 16px 17px 16px 0;
+	padding: 0 5px;
+	background: #ef534e;
+	color: #ffffff;
+	border: 1px solid #d8d8d8;
+	border-radius: 2px;
+}
+
+.popup-footer-btn:last-child {
+	color: #333333;
+	background: #f7f7f7;
+}
+
+.popup-footer-btn:hover {
+	background: #d52f30;
+	border: 1px solid #d52f30;
+	color: #ffffff;
+}
+
+/**
+ * 描述：弹出层/提示的蒙版
+ */
+
+.mask {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 98;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/*提示框样式*/
+.tipPanel-941{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1000;
+	width: 260px;
+	transform: translate(-50%, -50%);
+	background: #ffffff;
+	color: #6f8092;
+	overflow: hidden;
+}
+.tipPanel-941 .tip-head-941{
+	background: #C7454D;
+	color: #ffffff;
+	font-weight: bolder;
+}
+.tipPanel-941 .tip-head-941 span{
+	margin-left: 5px;
+}
+.tipPanel-941 .tip-body-941{
+	text-align: center;
+}
+.tipPanel-941 .tip-footer-941{
+	text-align: center;
+}
+
+
+.inbl{
+	display: inline-block;
+	vertical-align: middle;
+}
+.hidden{
+	display: none;
+}
+.visibility{
+	visibility: hidden;
+}
+.autoFill{
+	background: #DDDDDD !important;
+}
+
+/*
+ * jqGrid 滚动
+ */
+.g-table{
+	position: relative; 
+	overflow-y: auto;
+	overflow-x: auto;
+	/*border: 1px solid #CDCDCD;*/
+	
+}
+.g-tab-page{
+	background: rgba(240,240,240,0.9)!important;
+	width: 100% !important;
+}
+
+ui-pg-input{
+	width: 30px !important;
+	height: 14px !important;
+}

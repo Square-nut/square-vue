@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<script type="text/javascript" src="src/js/jquery-1.9.0.js" ></script>-->
+		<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="ali" style="text-align: center;font-weight: bolder;">
+			
+		</div>
+		
+		<script>
+			$(function(){
+				var tmp =  window.location.href;
+				var m = tmp.split("=")[1];
+				console.info(m);
+				$.ajax({
+					type:"post",
+					url: "/ffcloud-remoteRecipel/account/chargeMoney",
+					data: JSON.stringify({"total_fee": m}),
+					contentType:"application/json",
+					async:false,
+					success:function(res){
+						$(".ali").html(res);
+					}
+				});
+				
+			});
+		</script>
+	</body>
+</html>
